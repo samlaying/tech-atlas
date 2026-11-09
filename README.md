@@ -5,13 +5,23 @@
 - 线上地址：https://samlaying.github.io/tech-atlas/
 - 仓库：https://github.com/samlaying/tech-atlas
 
+## 三个页面
+
+- `index.html`：项目（首页，含 hero 和精选项目）
+- `tracks.html`：技术路线（学术方向 / 大众科普）
+- `about.html`：关于
+
+顶部导航是三个页面 tab，当前页用 `aria-current="page"` 标记；移动端保留三个 tab。
+
 ## 结构
 
 ```text
 .
-├── index.html      # 全部内容：精选项目、技术路线、关于
+├── index.html      # 项目（首页）
+├── tracks.html     # 技术路线
+├── about.html      # 关于
 ├── styles.css      # 玻璃拟态、渐变背景、响应式
-├── script.js       # 项目筛选、滚动出现、导航高亮
+├── script.js       # 项目筛选、滚动出现、年份
 ├── .nojekyll       # GitHub Pages 跳过 Jekyll
 └── README.md
 ```
@@ -39,7 +49,7 @@ python3 -m http.server 4173
 
 ### 技术路线
 
-在 `#tracks` 的两个 `.track` 里改 `<li>`：
+在 `tracks.html` 的两个 `.track` 里改 `<li>`：
 
 - `track-no` 是编号
 - `pill-doing` / `pill-reading` / `pill-writing` 控制状态颜色

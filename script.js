@@ -41,30 +41,6 @@ if (!reduceMotion && "IntersectionObserver" in window && revealItems.length) {
   revealItems.forEach((item) => revealObserver.observe(item));
 }
 
-// Highlight the current section in the top navigation
-const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
-const navSections = navLinks
-  .map((link) => document.querySelector(link.getAttribute("href")))
-  .filter(Boolean);
-
-if ("IntersectionObserver" in window && navSections.length) {
-  const navObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        navLinks.forEach((link) => link.removeAttribute("aria-current"));
-        const active = navLinks.find(
-          (link) => link.getAttribute("href") === `#${entry.target.id}`
-        );
-        if (active) active.setAttribute("aria-current", "true");
-      });
-    },
-    { rootMargin: "-35% 0px -55% 0px" }
-  );
-
-  navSections.forEach((section) => navObserver.observe(section));
-}
-
 // Footer year
 const year = document.getElementById("year");
 if (year) year.textContent = String(new Date().getFullYear());

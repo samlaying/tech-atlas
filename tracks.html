@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="林承列关注的技术路线：Agent Memory、Browser & Computer Use、Voice & Multimodal、Routing & Evaluation；以及技术科普写作。">
+  <meta name="theme-color" content="#f3f1ea">
+  <meta property="og:title" content="技术路线 · Tech Atlas">
+  <meta property="og:description" content="两条线：一条往深处读，一条往外面讲。">
+  <meta property="og:type" content="website">
+  <title>技术路线 · Tech Atlas · 林承列</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232f6b5f'/%3E%3Cstop offset='1' stop-color='%23526b88'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='24' font-weight='700' fill='%23fff' text-anchor='middle'%3ETA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="tracks">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <div class="backdrop" aria-hidden="true">
+    <span class="wash wash-a"></span>
+    <span class="wash wash-b"></span>
+    <span class="wash wash-c"></span>
+    <span class="grain"></span>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="./index.html" aria-label="Tech Atlas 首页">
+      <span class="brand-mark" aria-hidden="true">TA</span>
+      <span class="brand-text">
+        <strong>Tech Atlas</strong>
+        <small>林承列 / samlaying</small>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="页面切换">
+      <a href="./index.html">项目</a>
+      <a href="./tracks.html" aria-current="page">技术路线</a>
+      <a href="./about.html">关于</a>
+    </nav>
+
+    <a class="nav-cta" href="https://github.com/samlaying" target="_blank" rel="noreferrer">
+      GitHub <span aria-hidden="true">↗</span>
+    </a>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <p class="section-kicker">02 / TRACKS</p>
+      <h1>两条线：<br><span class="grad">一条往深处读，一条往外面讲。</span></h1>
+      <p class="lede">不是完整的知识体系，是最近持续投入、愿意反复琢磨的方向。学术方向偏“拆系统、读论文、做实验”，大众科普偏“把技术讲成人话”。</p>
+    </header>
+
+    <section class="section section-flush" id="tracks">
+      <div class="track-grid">
+        <article class="track glass track-academic" data-reveal>
+          <header class="track-head">
+            <span class="track-mark">A</span>
+            <div>
+              <p class="track-en">ACADEMIC</p>
+              <h3>学术方向</h3>
+            </div>
+          </header>
+          <p class="track-intro">读论文、拆系统、做小实验。关注 agent 在真实任务里的记忆、工具使用和质量评估。</p>
+          <ol class="track-list">
+            <li>
+              <span class="track-no">01</span>
+              <div class="track-body">
+                <h4>Agent Memory &amp; Context</h4>
+                <p>长期记忆、检索与上下文压缩：让 agent 在长任务里不忘事，也不被上下文淹死。</p>
+                <div class="track-foot"><span class="pill pill-doing">在做</span><a href="https://github.com/samlaying/infostation" target="_blank" rel="noreferrer">infostation ↗</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="track-no">02</span>
+              <div class="track-body">
+                <h4>Browser &amp; Computer Use</h4>
+                <p>让 agent 操作真实浏览器，复用登录态，处理反爬、弹窗和交互边界。</p>
+                <div class="track-foot"><span class="pill pill-doing">在做</span><a href="https://github.com/samlaying/ego-lite" target="_blank" rel="noreferrer">ego-lite ↗</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="track-no">03</span>
+              <div class="track-body">
+                <h4>Voice &amp; Multimodal</h4>
+                <p>分离、转写、翻译、TTS、口型同步；在质量、延迟和成本之间找平衡。</p>
+                <div class="track-foot"><span class="pill pill-doing">在做</span><a href="https://github.com/samlaying/voice-dub-pipeline" target="_blank" rel="noreferrer">voice-dub-pipeline ↗</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="track-no">04</span>
+              <div class="track-body">
+                <h4>Routing &amp; Evaluation</h4>
+                <p>多模型路由、成本与质量权衡、可复现的评测闭环。</p>
+                <div class="track-foot"><span class="pill pill-reading">在读</span><a href="https://github.com/samlaying/magpie" target="_blank" rel="noreferrer">magpie ↗</a></div>
+              </div>
+            </li>
+          </ol>
+        </article>
+
+        <article class="track glass track-public" data-reveal>
+          <header class="track-head">
+            <span class="track-mark">B</span>
+            <div>
+              <p class="track-en">PUBLIC WRITING</p>
+              <h3>大众科普</h3>
+            </div>
+          </header>
+          <p class="track-intro">把技术从术语里拽出来，讲给产品、业务和刚入门的人听。尽量具体，尽量能上手。</p>
+          <ol class="track-list">
+            <li>
+              <span class="track-no">01</span>
+              <div class="track-body">
+                <h4>技术解释</h4>
+                <p>把 agent、RAG、评测这些词讲给非技术背景的产品和业务同学听。</p>
+                <div class="track-foot"><span class="pill pill-writing">在写</span><a href="https://github.com/samlaying/pm-tech" target="_blank" rel="noreferrer">pm-tech ↗</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="track-no">02</span>
+              <div class="track-body">
+                <h4>Agent 实操</h4>
+                <p>用真实任务拆解 agent 工具链，而不是停在概念和 demo。</p>
+                <div class="track-foot"><span class="pill pill-doing">在做</span><a href="https://github.com/samlaying/browser-harness" target="_blank" rel="noreferrer">browser-harness ↗</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="track-no">03</span>
+              <div class="track-body">
+                <h4>个人数据与隐私</h4>
+                <p>本地优先的微信数据、个人知识库和信息处理，数据尽量留在自己手里。</p>
+                <div class="track-foot"><span class="pill pill-doing">在做</span><a href="https://github.com/samlaying/yichen-wechat-local-vault" target="_blank" rel="noreferrer">yichen-wechat-local-vault ↗</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="track-no">04</span>
+              <div class="track-body">
+                <h4>开源工作流</h4>
+                <p>把重复工作做成可复用的 CLI、skill 和自动化。</p>
+                <div class="track-foot"><span class="pill pill-doing">在做</span><a href="https://github.com/samlaying/daily-report-skill" target="_blank" rel="noreferrer">daily-report-skill ↗</a></div>
+              </div>
+            </li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-next" aria-label="下一页">
+      <a href="./about.html">
+        <span>下一站 / 03</span>
+        <strong>关于</strong>
+        <span>白天做产品，晚上写代码 <span aria-hidden="true">→</span></span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Tech Atlas · 林承列 · <span id="year">2026</span></p>
+    <p>Plain HTML / CSS / a little JS</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
