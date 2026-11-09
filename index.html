@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="林承列（samlaying）的 GitHub 项目与技术路线：AI agent、浏览器自动化、声音与内容、个人信息处理；以及学术与大众科普两条线。">
+  <meta name="theme-color" content="#f3f1ea">
+  <meta property="og:title" content="Tech Atlas · 林承列">
+  <meta property="og:description" content="我做过的东西，和我正在追的技术路线。">
+  <meta property="og:type" content="website">
+  <title>Tech Atlas · 林承列</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232f6b5f'/%3E%3Cstop offset='1' stop-color='%23526b88'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='24' font-weight='700' fill='%23fff' text-anchor='middle'%3ETA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <div class="backdrop" aria-hidden="true">
+    <span class="wash wash-a"></span>
+    <span class="wash wash-b"></span>
+    <span class="wash wash-c"></span>
+    <span class="grain"></span>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Tech Atlas 首页">
+      <span class="brand-mark" aria-hidden="true">TA</span>
+      <span class="brand-text">
+        <strong>Tech Atlas</strong>
+        <small>林承列 / samlaying</small>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#work">项目</a>
+      <a href="#tracks">技术路线</a>
+      <a href="#about">关于</a>
+    </nav>
+
+    <a class="nav-cta" href="https://github.com/samlaying" target="_blank" rel="noreferrer">
+      GitHub <span aria-hidden="true">↗</span>
+    </a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>AI PRODUCT MANAGER / BUILDING IN PUBLIC</p>
+        <h1>
+          把做过的东西摊开，<br>
+          <span class="grad">把想追的技术</span><br>
+          画成一张地图。
+        </h1>
+        <p class="lede">我是林承列，AI 产品经理。这里放两样东西：我写的代码，和我正在读、在做、想讲明白的技术。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">看项目 <span aria-hidden="true">→</span></a>
+          <a class="button button-ghost" href="#tracks">看技术路线</a>
+        </div>
+        <ul class="hero-meta" aria-label="关注方向">
+          <li><span>01</span> Agent 工具</li>
+          <li><span>02</span> 声音与内容</li>
+          <li><span>03</span> 个人数据</li>
+        </ul>
+      </div>
+
+      <aside class="hero-card glass" aria-label="当前状态">
+        <div class="card-head">
+          <span>NOW</span>
+          <span class="status"><i></i>2026.11</span>
+        </div>
+        <div class="now-list">
+          <div class="now-item">
+            <span class="now-k">在做</span>
+            <p>Agent 浏览器、模型路由、个人信息处理</p>
+          </div>
+          <div class="now-item">
+            <span class="now-k">在读</span>
+            <p>Agent memory、评测、上下文工程</p>
+          </div>
+          <div class="now-item">
+            <span class="now-k">在写</span>
+            <p>把技术讲给非技术背景的人</p>
+          </div>
+        </div>
+        <div class="card-foot">
+          <a href="https://github.com/samlaying" target="_blank" rel="noreferrer">github.com/samlaying ↗</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="work">
+      <header class="section-head" data-reveal>
+        <div>
+          <p class="section-kicker">01 / SELECTED WORK</p>
+          <h2>项目不是简历，<br>是做过之后留下的痕迹。</h2>
+        </div>
+        <p class="section-note">从公开仓库里挑了一部分。完整的在 <a href="https://github.com/samlaying?tab=repositories" target="_blank" rel="noreferrer">GitHub ↗</a>。</p>
+      </header>
+
+      <div class="filters" role="group" aria-label="项目筛选" data-reveal>
+        <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+        <button class="filter" type="button" data-filter="agent" aria-pressed="false">Agent</button>
+        <button class="filter" type="button" data-filter="voice" aria-pressed="false">声音</button>
+        <button class="filter" type="button" data-filter="info" aria-pressed="false">信息</button>
+        <button class="filter" type="button" data-filter="notes" aria-pressed="false">笔记</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project glass" data-category="agent" data-reveal>
+          <div class="project-top">
+            <span class="project-index">01</span>
+            <span class="project-lang"><i class="lang-js"></i>JavaScript</span>
+          </div>
+          <h3><a href="https://github.com/samlaying/ego-lite" target="_blank" rel="noreferrer">ego-lite</a></h3>
+          <p>给 AI agent 用的浏览器：复用你已登录的状态做自动化，不打断你当前的工作。</p>
+          <div class="project-tags"><span>Agent</span><span>Browser</span><span>本地优先</span></div>
+          <a class="project-link" href="https://github.com/samlaying/ego-lite" target="_blank" rel="noreferrer" aria-label="打开 ego-lite 仓库">查看仓库 <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project glass" data-category="agent" data-reveal>
+          <div class="project-top">
+            <span class="project-index">02</span>
+            <span class="project-lang"><i class="lang-python"></i>Python <b>★ 7</b></span>
+          </div>
+          <h3><a href="https://github.com/samlaying/browser-harness" target="_blank" rel="noreferrer">browser-harness</a></h3>
+          <p>连接 LLM 与真实浏览器的 CDP 薄封装，内置小红书采集等 skill。</p>
+          <div class="project-tags"><span>CDP</span><span>Skill</span><span>自动化</span></div>
+          <a class="project-link" href="https://github.com/samlaying/browser-harness" target="_blank" rel="noreferrer" aria-label="打开 browser-harness 仓库">查看仓库 <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project glass" data-category="agent" data-reveal>
+          <div class="project-top">
+            <span class="project-index">03</span>
+            <span class="project-lang"><i class="lang-go"></i>Go</span>
+          </div>
+          <h3><a href="https://github.com/samlaying/magpie" target="_blank" rel="noreferrer">magpie</a></h3>
+          <p>每个 agent 的模型路由：一个入口，按任务把 Codex、Claude Code 接到不同模型。</p>
+          <div class="project-tags"><span>Router</span><span>多模型</span><span>CLI</span></div>
+          <a class="project-link" href="https://github.com/samlaying/magpie" target="_blank" rel="noreferrer" aria-label="打开 magpie 仓库">查看仓库 <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project glass" data-category="voice" data-reveal>
+          <div class="project-top">
+            <span class="project-index">04</span>
+            <span class="project-lang"><i class="lang-python"></i>Python</span>
+          </div>
+          <h3><a href="https://github.com/samlaying/voice-dub-pipeline" target="_blank" rel="noreferrer">voice-dub-pipeline</a></h3>
+          <p>六段式配音流水线：下载、分离、转写、翻译、TTS、混音与口型同步。</p>
+          <div class="project-tags"><span>Voice</span><span>WhisperX</span><span>GPT-SoVITS</span></div>
+          <a class="project-link" href="https://github.com/samlaying/voice-dub-pipeline" target="_blank" rel="noreferrer" aria-label="打开 voice-dub-pipeline 仓库">查看仓库 <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project glass" data-category="info" data-reveal>
+          <div class="project-top">
+            <span class="project-index">05</span>
+            <span class="project-lang"><i class="lang-js"></i>JavaScript</span>
+          </div>
+          <h3><a href="https://github.com/samlaying/infostation" target="_blank" rel="noreferrer">infostation</a></h3>
+          <p>AI 驱动的个人信息处理中枢，把碎片信息整理成可检索、可复用的结构。</p>
+          <div class="project-tags"><span>Info</span><span>SQLite</span><span>Agent</span></div>
+          <a class="project-link" href="https://github.com/samlaying/infostation" target="_blank" rel="noreferrer" aria-label="打开 infostation 仓库">查看仓库 <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project glass" data-category="info" data-reveal>
+          <div class="project-top">
+            <span class="project-index">06</span>
+            <span class="project-lang"><i class="lang-python"></i>Python <b>★ 25</b></span>
+          </div>
+          <h3><a href="https://github.com/samlaying/daily-report-skill" target="_blank" rel="noreferrer">daily-report-skill</a></h3>
+          <p>截图 → AI 分析 → 分类 → Markdown 日报，把每天的输入沉淀成可回看的记录。</p>
+          <div class="project-tags"><span>Workflow</span><span>Vision</span><span>Markdown</span></div>
+          <a class="project-link" href="https://github.com/samlaying/daily-report-skill" target="_blank" rel="noreferrer" aria-label="打开 daily-report-skill 仓库">查看仓库 <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project glass" data-category="notes" data-reveal>
+          <div class="project-top">
+            <span class="project-index">07</span>
+            <span class="project-lang"><i class="lang-python"></i>Python</span>
+          </div>
+          <h3><a href="https://github.com/samlaying/md2resume" target="_blank" rel="noreferrer">md2resume</a></h3>
+          <p>Markdown + 证件照生成简历 PDF / HTML / PNG，让内容与排版分开。</p>
+          <div class="project-tags"><span>Resume</span><span>Markdown</span><span>PDF</span></div>
+          <a class="project-link" href="https://github.com/samlaying/md2resume" target="_blank" rel="noreferrer" aria-label="打开 md2resume 仓库">查看仓库 <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project glass" data-category="notes" data-reveal>
+          <div class="project-top">
+            <span class="project-index">08</span>
+            <span class="project-lang"><i class="lang-python"></i>Python</span>
+          </div>
+          <h3><a href="https://github.com/samlaying/pm-tech" target="_blank" rel="noreferrer">pm-tech</a></h3>
+          <p>写给非技术背景产品经理的技术科普：10 个模块，短文独立可读。</p>
+          <div class="project-tags"><span>Writing</span><span>PM</span><span>科普</span></div>
+          <a class="project-link" href="https://github.com/samlaying/pm-tech" target="_blank" rel="noreferrer" aria-label="打开 pm-tech 仓库">查看仓库 <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="tracks">
+      <header class="section-head" data-reveal>
+        <div>
+          <p class="section-kicker">02 / TRACKS</p>
+          <h2>两条线：<br>一条往深处读，一条往外面讲。</h2>
+        </div>
+        <p class="section-note">不是完整的知识体系，是最近持续投入、愿意反复琢磨的方向。</p>
+      </header>
+
+      <div class="track-grid">
+        <article class="track glass track-academic" data-reveal>
+          <header class="track-head">
+            <span class="track-mark">A</span>
+            <div>
+              <p class="track-en">ACADEMIC</p>
+              <h3>学术方向</h3>
+            </div>
+          </header>
+          <p class="track-intro">读论文、拆系统、做小实验。关注 agent 在真实任务里的记忆、工具使用和质量评估。</p>
+          <ol class="track-list">
+            <li>
+              <span class="track-no">01</span>
+              <div class="track-body">
+                <h4>Agent Memory &amp; Context</h4>
+                <p>长期记忆、检索与上下文压缩：让 agent 在长任务里不忘事，也不被上下文淹死。</p>
+                <div class="track-foot"><span class="pill pill-doing">在做</span><a href="https://github.com/samlaying/infostation" target="_blank" rel="noreferrer">infostation ↗</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="track-no">02</span>
+              <div class="track-body">
+                <h4>Browser &amp; Computer Use</h4>
+                <p>让 agent 操作真实浏览器，复用登录态，处理反爬、弹窗和交互边界。</p>
+                <div class="track-foot"><span class="pill pill-doing">在做</span><a href="https://github.com/samlaying/ego-lite" target="_blank" rel="noreferrer">ego-lite ↗</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="track-no">03</span>
+              <div class="track-body">
+                <h4>Voice &amp; Multimodal</h4>
+                <p>分离、转写、翻译、TTS、口型同步；在质量、延迟和成本之间找平衡。</p>
+                <div class="track-foot"><span class="pill pill-doing">在做</span><a href="https://github.com/samlaying/voice-dub-pipeline" target="_blank" rel="noreferrer">voice-dub-pipeline ↗</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="track-no">04</span>
+              <div class="track-body">
+                <h4>Routing &amp; Evaluation</h4>
+                <p>多模型路由、成本与质量权衡、可复现的评测闭环。</p>
+                <div class="track-foot"><span class="pill pill-reading">在读</span><a href="https://github.com/samlaying/magpie" target="_blank" rel="noreferrer">magpie ↗</a></div>
+              </div>
+            </li>
+          </ol>
+        </article>
+
+        <article class="track glass track-public" data-reveal>
+          <header class="track-head">
+            <span class="track-mark">B</span>
+            <div>
+              <p class="track-en">PUBLIC WRITING</p>
+              <h3>大众科普</h3>
+            </div>
+          </header>
+          <p class="track-intro">把技术从术语里拽出来，讲给产品、业务和刚入门的人听。尽量具体，尽量能上手。</p>
+          <ol class="track-list">
+            <li>
+              <span class="track-no">01</span>
+              <div class="track-body">
+                <h4>技术解释</h4>
+                <p>把 agent、RAG、评测这些词讲给非技术背景的产品和业务同学听。</p>
+                <div class="track-foot"><span class="pill pill-writing">在写</span><a href="https://github.com/samlaying/pm-tech" target="_blank" rel="noreferrer">pm-tech ↗</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="track-no">02</span>
+              <div class="track-body">
+                <h4>Agent 实操</h4>
+                <p>用真实任务拆解 agent 工具链，而不是停在概念和 demo。</p>
+                <div class="track-foot"><span class="pill pill-doing">在做</span><a href="https://github.com/samlaying/browser-harness" target="_blank" rel="noreferrer">browser-harness ↗</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="track-no">03</span>
+              <div class="track-body">
+                <h4>个人数据与隐私</h4>
+                <p>本地优先的微信数据、个人知识库和信息处理，数据尽量留在自己手里。</p>
+                <div class="track-foot"><span class="pill pill-doing">在做</span><a href="https://github.com/samlaying/yichen-wechat-local-vault" target="_blank" rel="noreferrer">yichen-wechat-local-vault ↗</a></div>
+              </div>
+            </li>
+            <li>
+              <span class="track-no">04</span>
+              <div class="track-body">
+                <h4>开源工作流</h4>
+                <p>把重复工作做成可复用的 CLI、skill 和自动化。</p>
+                <div class="track-foot"><span class="pill pill-doing">在做</span><a href="https://github.com/samlaying/daily-report-skill" target="_blank" rel="noreferrer">daily-report-skill ↗</a></div>
+              </div>
+            </li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-panel glass" data-reveal>
+        <p class="section-kicker">03 / ABOUT</p>
+        <div class="about-grid">
+          <div>
+            <h2>白天做产品，<br>晚上写代码。</h2>
+          </div>
+          <div class="about-copy">
+            <p>我是林承列，AI 产品经理。这个站点放两样东西：我做过的东西，和我正在追的技术路线。</p>
+            <p>项目大多围绕 agent 工具、声音与内容、个人信息处理。技术路线分两条：一条往深处读，一条往外面讲。</p>
+            <div class="about-links">
+              <a href="https://github.com/samlaying" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              <a href="https://justin3go.com" target="_blank" rel="noreferrer">Blog <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/samlaying/tech-atlas" target="_blank" rel="noreferrer">本站源码 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Tech Atlas · 林承列 · <span id="year">2026</span></p>
+    <p>Plain HTML / CSS / a little JS</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
